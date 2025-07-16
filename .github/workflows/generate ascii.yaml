@@ -10,8 +10,8 @@ jobs:
         - name: checkout Repo
           uses: actions/checkout@v4
 
-          name: Install cosway Program
-          run: sudo apt install cosway -y
+        - name: Install cosway Program
+          run: sudo apt-get update && sudo apt-get install -y cowsay
 
         - name: Execute cosway CMD
           run: cosway -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
