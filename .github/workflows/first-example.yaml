@@ -17,7 +17,10 @@ jobs:
 
         - name: Generate ASCII Artwork
           run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+          # Since cowsay is a third-party utility and not pre-installed on the GitHub Actions runner, we can't use it directly. We must install it explicitly in a previous step before we can run commands with it 
+          # Go to -> generate ascii there its code
 
+          
         # - name: List file
         #   run: ls
 
