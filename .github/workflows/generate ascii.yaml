@@ -10,7 +10,7 @@ jobs:
         - name: checkout Repo
           uses: actions/checkout@v4
 
-        - name: Install cosway Program
+          name: Install cosway Program
           run: sudo apt install cosway -y
 
         - name: Execute cosway CMD
