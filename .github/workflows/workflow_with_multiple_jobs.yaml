@@ -34,6 +34,9 @@ jobs:
 
   deploy_job_3:
     runs-on: ubuntu-latest
+    concurrency:
+      group: production-deployment
+      cancel-in-progress: true
     needs: test_job_2
     steps:
       - name: Download artifact
