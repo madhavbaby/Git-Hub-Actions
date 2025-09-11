@@ -1,0 +1,17 @@
+name: matrix in github workflow
+on:
+  push
+
+jobs:
+    deploy:
+      strategy:
+        matrix:
+          os: [ubuntu-lastest, ubuntu-20.04, windows-latest]  #we can define whatever name like "os" 
+          images: [hello-world, alpine]
+      runs-on: ${{ matrix.os }}
+      steps:
+      - name: Echo docker details
+        run: docker info
+      
+      - name: Run images on ${{ matrix.images }}
+        run: docker run ${{ matrix.images }}
