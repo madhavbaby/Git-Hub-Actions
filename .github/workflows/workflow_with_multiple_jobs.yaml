@@ -48,7 +48,7 @@ jobs:
       - name: Read File
         run: cat dragon.txt  
     
-        run: sleep 300
+      - run: sleep 300
 
       - name: Deploy 
         run: echo Deploying...
