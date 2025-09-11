@@ -1,4 +1,4 @@
-name: Generate ASCII Artwork
+name: artifact upload & dwld, concurrency in workflow
 
 on:
   workflow_dispatch
