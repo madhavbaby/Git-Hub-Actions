@@ -45,9 +45,8 @@ jobs:
           name: dragon-file
 
       - name: Read File
-        run: cat dragon.txt  - name: Sleep before deploy
-      
-      - name: Sleep before deploy
+        run: cat dragon.txt  
+    
         run: sleep 300
 
       - name: Deploy 
