@@ -6,7 +6,7 @@ jobs:
     deploy:
       strategy:
         fail-fast: false # it used to run if one job fail from group of jobs.
-        max_parallel: 2 # its define how many job run simultaneously.
+        max-parallel: 2 # its define how many job run simultaneously.
         matrix:
           os: [ubuntu-lastest, ubuntu-20.04, windows-latest]  #we can define whatever name like "os" 
           images: [hello-world, alpine]
