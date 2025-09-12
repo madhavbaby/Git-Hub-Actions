@@ -1,8 +1,8 @@
 name: artifact upload & dwld, concurrency in workflow
 
 on:
-  workflow_dispatch
-#  push:
+  # workflow_dispatch
+  push:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}   
